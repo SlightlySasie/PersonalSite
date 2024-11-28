@@ -590,16 +590,44 @@ ul li .descr::before {
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
     body {
-      background-color: blue;
+      
     }
 
+    h2{
+      font-size: 2em;
+    }
+
+    h3{
+      font-size: 1em;
+    }
+
+
+    .grid-container-mid{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left {
+      margin-left: 10%;
+      padding-right: 7%;
+      margin-top: 7%;
+  }
+
+  .grid-container-form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-onethird {
+    margin-left: 5%;
+}
 
   }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     body {
-      background-color: olive;
+      
     }
   }
 
