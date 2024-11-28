@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacha Vermeer</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/dcfee6d073.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/BigIcon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/MediumIcon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/SmallIcon.png">
+</head>
+
+<body class="portfolio-background">
+
+  <nav class="navbar">
+    <div class="navbar-container container">
+        <ul class="menu-items">
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="AboutMe.html">About me</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <h1 class="logo">Sacha Vermeer</h1>
+    </div>
+</nav>
+
+<section class="portfolio">
+
+  <!--Research-->
+  <div>
+    <p>dkjflakjdf</p>
+  </div>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides1" src="Images/DikkeZeugSupremacy.png" style="width:100%">
+    <img class="mySlides1" src="Images/DikkeZeugSupremacy.png"  style="width:100%">
+    <img class="mySlides1" src="Images/DikkeZeugSupremacy.png"  style="width:100%">
+    <img class="mySlides1" src="Images/DikkeZeugSupremacy.png"  style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+  </div>
+  
+  <!--Choosiversity-->
+  <div class="w3-content w3-display-container">
+    <img class="mySlides2" src="Images/Portfolio/Choosiversity1.png"  style="width:100%">
+    <img class="mySlides2" src="Images/Portfolio/Choosiversity2.png"  style="width:100%">
+    <img class="mySlides2" src="Images/Portfolio/Choosiversity3.png"  style="width:100%">
+    <img class="mySlides2" src="Images/Portfolio/Choosiversity4.png"  style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+  </div>
+
+  <div>
+    <p>dkjflakjdf</p>
+  </div>
+
+  <!--Komsomol Truth-->
+  <div>
+    <p>dkjflakjdf</p>
+  </div>
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides3" src="Images/Portfolio/KomsomolTruth1.png" style="width:100%">
+    <img class="mySlides3" src="Images/Portfolio/KomsomolTruth2.png"  style="width:100%">
+    <img class="mySlides3" src="Images/Portfolio/KomsomolTruth3.png"  style="width:100%">
+    <img class="mySlides3" src="Images/Portfolio/KomsomolTruth4.png"  style="width:100%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
+  </div>
+
+</section>
+
+
+<script>
+var slideIndex = [1, 1, 1];  // Add a third entry for the third slideshow
+var slideId = ["mySlides1", "mySlides2", "mySlides3"];  // Add "mySlides3" for the third slideshow
+
+showDivs(1, 0); // Show the first slide of the first slideshow
+showDivs(1, 1); // Show the first slide of the second slideshow
+showDivs(1, 2); // Show the first slide of the third slideshow
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);  // Update the slideIndex for the correct slideshow
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);  // Get elements by class for the correct slideshow
+  if (n > x.length) { slideIndex[no] = 1; }  // Loop back to the first slide
+  if (n < 1) { slideIndex[no] = x.length; }  // Loop back to the last slide
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  // Hide all slides
+  }
+  x[slideIndex[no] - 1].style.display = "block";  // Show the selected slide
+}
+</script>
+
+</body>
+</html>

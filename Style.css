@@ -1,0 +1,606 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Poppins';
+  }
+
+/*Navbar*/
+  h1 {
+    color: navy;
+  }
+
+  .logo{
+    order: 1;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.container{
+  max-width: 1200px;
+  width: 70%;
+  margin: auto 20% auto 15%;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background: #052524;
+  z-index: 100;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items{
+  order: 2;
+  display: flex;
+}
+
+.menu-items li{
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+  color: #ff6f59;
+}
+
+
+/*Header*/
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  color: #052524;
+  padding: 100px 0 100px;
+  background-color: #052524;
+  flex-wrap: initial;
+}
+
+h2{
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  flex-wrap: wrap;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.button:hover{
+  background-color: #ff6f59;
+}
+
+  .buttonheader {background-color: #db504a;
+  margin-left: 15%;}
+  .buttonheader2 {background-color: #db504a;}
+
+
+/*Intro*/
+.skewed-bg {
+  background: #db504a;
+  color: #FFF;
+  padding: 2em;
+  position: relative;
+  min-height:300px;
+  overflow:hidden;
+}
+.skewed-bg::after {
+content: '';
+position: absolute;
+bottom: -75%; left: 0; right: 0;
+height:100%;
+background:#FFF;
+transform: skew(0deg, -9deg);
+}
+
+.grid-container-mid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.left{
+  margin-left: 30%;
+  padding-right: 7%;
+  margin-top: 7%;
+}
+
+.right{
+  margin-left: 0px;
+}
+
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 30% 55%;
+  gap: 10px;
+  padding: 10px;
+  margin-left: 6%;
+}
+
+.left-onethird{
+  margin-left: 30%;
+  padding-right: 7%;
+  background-color: #ff6f59;
+  border-radius: 10px;
+}
+
+.right-twothird{
+  margin-left: 0px;
+}
+
+.grid-split {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 400px; 
+  height: 400px;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.img-dotted{
+  width: 80%;
+  height: 10%;
+  padding-top: 5%;
+  margin-top: 0%;
+}
+
+h3{
+  color: black;
+  font-size: 3em;
+}
+
+/*contact form*/
+.contactsection{
+  padding-top: 5%;
+}
+
+.form-left{
+  padding: 8% 1% 2% 10%;
+  color: #FFFFFF;
+}
+.p-contacttext{
+  padding-top: 5%;
+}
+
+.p-firstlink{
+  padding-top: 15%;
+}
+
+.contactsection a{
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  
+}
+
+.contactsection a:hover{
+  color: #052524;
+}
+
+.form-right{
+  padding: 3%;
+}
+
+h5{
+  font-size: 1.8em;
+  color: white;
+  margin: 0%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 6px 0px 6px 0px; /* Some padding */ 
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
+
+.input-NE
+{
+  width: 97%;
+}
+
+input[type=subject], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 2px solid #000000; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  padding-right: 10%;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ff6f59;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: right;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contactform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*Footer*/
+.footer{
+  margin: 2% 2% 0% 2%;
+  flex-wrap: initial;
+  border-top-style: solid;
+  display: grid;
+}
+
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: 95% 5%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.footer p{
+  margin-top: 1%;
+  margin-left: 0.5%;
+}
+
+.footer a{
+  color: black;
+}
+
+i{
+  padding-right: 1.5%;
+}
+
+.footer i:hover{
+  color: #ff6f59;
+}
+
+.footer-portfolio{
+  margin: 2% 2% 0% 2%;
+  flex-wrap: initial;
+  border-top-style: solid;
+  display: grid;
+  color: white;
+}
+
+.footer-portfolio a{
+  color: white;
+}
+
+.footer-portfolio i:hover{
+  color: #ff6f59;
+}
+
+/*About me*/
+.aboutme-section{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 10px;
+  padding: 15%;
+  padding-bottom: 0%;
+  padding-top: 6%;
+}
+
+.p-aboutme-section{
+  padding-bottom: 5rem;
+}
+
+h4{
+  color: #000000;
+  font-size: 2em;
+}
+
+.educatie{
+  margin-left: 13%;
+}
+
+.aboutme-image{
+  padding: 5px;
+  width: 200px; 
+  height: 200px;
+  margin-left: 20%;
+}
+
+.aboutme-skills{
+  display: grid;
+  grid-template-columns: 40% 40% 40%;
+  gap: 10px;
+  padding: 15%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.dot {
+  display: inline-block;
+  border: px solid white;
+  background-color: #ff6f59;
+  height: 25px;
+  border-radius: 110%;
+  width: 25px;
+  margin-top: 5%;
+}
+
+.skills{
+  padding-left: 40px;
+}
+
+/*portfolio*/
+.portfolio{
+  max-width: 900px;
+  float: none;
+  margin: auto; 
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-AB {
+  --color: rgba(30, 30, 30);
+  --bgColor: white;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+  padding-top: 8%;
+}
+
+.ul-AB {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+/* line */
+ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+
+/* columns*/
+
+/* row gaps */
+ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+/* date */
+ul li .date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color: #052524;
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+ul li .date::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: #052524;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+/* circle */
+ul li .date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid #ff6f59;
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+ul li .title,
+ul li .descr {
+  background: var(--bgColor);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+ul li .title {
+  font-style: italic;
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+ul li .descr {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+/* shadows */
+ul li .title::before,
+ul li .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+ul li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+ul li .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  ul::before {
+    grid-column: 2;
+  }
+  ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  ul li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  ul li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  ul li:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.credits a {
+  color: var(--color);
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+    }
+
+
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    }
+  }
+
+  
