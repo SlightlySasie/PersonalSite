@@ -20,7 +20,7 @@
     <nav class="navbar">
         <div class="navbar-container container">
             <ul class="menu-items">
-                <li><a href="Main.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="AboutMe.html">About me</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Contact.html">Contact</a></li>
@@ -64,11 +64,11 @@
         </div>
         <div class="right-twothird">
             <div class="form-right">
-            <form action="action_page.php">
+            <form action="form-process.php" method="POST" class="formcarry-form">
                 
                 <div class="grid-split">
-                    <div class="input-NE"><label for="fname">Naam</label>
-                        <input type="text" id="fname" name="naam" placeholder="Naam">
+                    <div class="input-NE"><label for="name">Naam</label>
+                        <input type="text" id="name" name="naam" placeholder="Naam">
                     </div>
                     <div class="input-NE">
                         <label for="email">E-mailaddress</label>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <label for="onderwerp">Onderwerp</label>
-                <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp">
+                <input type="text" id="subject" name="onderwerp" placeholder="Onderwerp">
 
         <label for="subject">Bericht</label>
         <textarea id="subject" name="subject" placeholder="..." style="height:120px"></textarea>

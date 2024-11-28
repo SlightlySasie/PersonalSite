@@ -105,12 +105,12 @@ h2{
 }
 
 .button:hover{
-  background-color: #ff6f59;
+  background-color: #db504a;
 }
 
-  .buttonheader {background-color: #db504a;
+  .buttonheader {background-color: #ff6f59;
   margin-left: 15%;}
-  .buttonheader2 {background-color: #db504a;}
+  .buttonheader2 {background-color: #ff6f59;}
 
 
 /*Intro*/
@@ -312,22 +312,6 @@ i{
   color: #ff6f59;
 }
 
-.footer-portfolio{
-  margin: 2% 2% 0% 2%;
-  flex-wrap: initial;
-  border-top-style: solid;
-  display: grid;
-  color: white;
-}
-
-.footer-portfolio a{
-  color: white;
-}
-
-.footer-portfolio i:hover{
-  color: #ff6f59;
-}
-
 /*About me*/
 .aboutme-section{
   display: grid;
@@ -386,9 +370,126 @@ h4{
   max-width: 900px;
   float: none;
   margin: auto; 
-  padding-top: 5%;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.portfolio-img{
+  margin-top:0%;
+  margin-bottom:15%;
+}
+
+.download{
+  color:#ff6f59;
+  background-color: #ff6f59;
+  margin-left: 23%;
+  margin-top: 2%;
+}
+
+h7{
+  font-size: 2.5rem;
+  margin-top: 5%;
+}
+
+.mySlides1{
+  width:50%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 18%;
+}
+
+.mySlides2{
+  width: 100%;
+  margin-top: 0%;
+  height: auto;
+}
+
+.mySlides3{
+  width:70%;
+  height: auto;
+  margin-top: 0%;
+}
+
+.mySlides4{
+  width:70%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 15%;
+}
+
+.slide-container{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+h6{
+  font-size: 3rem;
+  padding-top: 5%;
+  margin-left:20%;
+}
+
+/* Next & previous buttons */
+
+/* Next & previous buttons */
+/* Common styles for all prev and next buttons */
+.prev1, .next1,
+.prev2, .next2,
+.prev3, .next3,
+.prev4, .next4 {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ff6f59;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+}
+
+/* Specific adjustments for each group */
+.prev1, .next1 {
+  margin-top: 45%;
+}
+
+.prev2, .next2 {
+  margin-top: 20%;
+}
+
+.prev3, .next3 {
+  margin-top: 45%;
+}
+
+.prev4, .next4 {
+  top: 50%;
+}
+
+.next4 {
+  right: 0;
+}
+
+.next1 {
+  margin-left: 75%;
+}
+
+.next2 {
+  margin-left: 110%;
+}
+
+.next3 {
+  margin-left: 80%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover, .next1:hover,
+.prev2:hover, .next2:hover,
+.prev3:hover, .next3:hover,
+.prev4:hover, .next4:hover {
+  background-color: #052524;
 }
 
 
