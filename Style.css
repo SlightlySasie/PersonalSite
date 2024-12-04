@@ -425,9 +425,9 @@ h7{
 }
 
 h6{
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-top: 5%;
-  margin-left:20%;
+  margin-left:42%;
 }
 
 /* Next & previous buttons */
@@ -668,6 +668,7 @@ ul li .descr::before {
   ul li:nth-child(odd) .date::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     left: 0;
+    display: none;
   }
 
   ul li:nth-child(odd) .date::after {
@@ -677,6 +678,10 @@ ul li .descr::before {
   ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
+
+  ul li .date::before {
+    display: none;
+  }
 }
 
 .credits {
@@ -685,6 +690,30 @@ ul li .descr::before {
 }
 .credits a {
   color: var(--color);
+}
+
+.ul-AB {
+  grid-template-columns: 1fr; /* Ensures only one column in small screen */
+  padding-inline: 1rem; /* Optionally reduce padding for smaller screens */
+}
+
+ul li {
+  grid-column: span 1; /* Each item takes up the full width */
+}
+
+ul li .date {
+  border-radius: calc(var(--dateH) / 2);
+  font-size: medium;
+  font-weight: 100;
+}
+
+ul li .title, ul li .descr {
+  padding-inline: 1rem; /* Adjust padding for smaller screens */
+}
+
+/* Optional: Adjust margin of cards */
+ul li:not(:last-child) {
+  margin-bottom: 1rem; /* Reduce the gap between list items */
 }
 
 
@@ -717,13 +746,134 @@ ul li .descr::before {
   .grid-container-form{
     display: flex;
     flex-direction: column;
+    margin-left: 0%;
+  }
+
+  .form-left {
+    padding: 8% 1% 7% 10%;
   }
 
   .left-onethird {
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 10px;
+  padding: 10px;
+}
+
+img{
+  margin: 0%;
+        margin-left: 5%;
+        align-items: center;
+        width: 90%;
+        height: auto;
+}
+
+.img-dotted{
+  display: none;
+}
+
+.aboutme-section {
+  display: flex;
+  padding: 0%;
+  margin-top: 20%;
+  padding-bottom: 20%;
+}
+
+.container {
+  margin-left: 2%;
+}
+
+.aboutme-skills {
+  display: block;
+  padding-left: 10%;
+}
+
+.body-AB {
+  display: block;
+  padding-right: 5%;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+.ul-AB {
+  margin-right:0%;
+  padding-right:0%;
+  padding-left: 0%;
+}
+
+ul li {
+  display: block;
+}
+
+ul li .date {
+  display: block; 
+  margin-top: 6%;
+}
+
+ul li .date::before {
+  display: none;
+}
+
+ul li .date::after {
+  display: none;
+}
+
+.educatie {
+  margin-left: 10%;
+}
+
+ul li .title {
+  padding: 0%;
   }
+
+  ul li .title, ul li .descr {
+    padding: 0%;
+    padding-top: 4%;
+}
+
+.portfolio {
+  display: block;
+  padding: 5%;
+}
+
+h6 {
+  margin-left: 5%;
+  padding-top: 20%;
+}
+
+.mySlides1 {
+  margin-left: 25%;
+}
+
+.next1 {
+  margin-left: 90%;
+}
+
+.mySlides2 {
+  width: 90%;
+}
+
+.prev2, .next2 {
+  padding: 0%;
+}
+
+.next2 {
+  margin-left: 97%;
+}
+
+.mySlides3 {
+  margin-left: 15%;
+}
+
+.next3 {
+  margin-left: 86%;
+}
+
+}
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
@@ -731,5 +881,3 @@ ul li .descr::before {
       
     }
   }
-
-  
