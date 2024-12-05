@@ -38,6 +38,7 @@ body {
 .menu-items{
   order: 2;
   display: flex;
+  margin-top: 1.5%;
 }
 
 .menu-items li{
@@ -317,8 +318,8 @@ i{
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 10px;
-  padding: 15%;
-  padding-bottom: 0%;
+  padding: 13.5%;
+  padding-bottom: 4%;
   padding-top: 6%;
 }
 
@@ -505,7 +506,7 @@ h6{
 
 .body-AB {
   --color: rgba(30, 30, 30);
-  --bgColor: white;
+  --bgColor: rgba(245, 245, 245);
   min-height: 100vh;
   display: grid;
   align-content: center;
@@ -513,8 +514,6 @@ h6{
   padding: 2rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
-  background: var(--bgColor);
-  padding-top: 8%;
 }
 
 .ul-AB {
@@ -596,7 +595,7 @@ ul li .date::after {
   width: 2rem;
   aspect-ratio: 1;
   background: var(--bgColor);
-  border: 0.3rem solid #ff6f59;
+  border: 0.3rem solid var(--accent-color);
   border-radius: 50%;
   top: 50%;
 
@@ -607,18 +606,19 @@ ul li .date::after {
 /* title descr */
 ul li .title,
 ul li .descr {
-  background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
 }
 ul li .title {
-  font-style: italic;
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-style: italic;
+  padding-top: 2%;
+  padding-bottom: 8%;
 }
+
 ul li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
@@ -631,7 +631,6 @@ ul li .descr::before {
   position: absolute;
   width: 90%;
   height: 0.5rem;
-  background: rgba(0, 0, 0, 0.5);
   left: 50%;
   border-radius: 50%;
   filter: blur(4px);
@@ -668,7 +667,6 @@ ul li .descr::before {
   ul li:nth-child(odd) .date::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%);
     left: 0;
-    display: none;
   }
 
   ul li:nth-child(odd) .date::after {
@@ -677,10 +675,6 @@ ul li .descr::before {
   }
   ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
-  }
-
-  ul li .date::before {
-    display: none;
   }
 }
 
@@ -692,17 +686,11 @@ ul li .descr::before {
   color: var(--color);
 }
 
-.ul-AB {
-  grid-template-columns: 1fr; /* Ensures only one column in small screen */
-  padding-inline: 1rem; /* Optionally reduce padding for smaller screens */
-}
-
 ul li {
   grid-column: span 1; /* Each item takes up the full width */
 }
 
 ul li .date {
-  border-radius: calc(var(--dateH) / 2);
   font-size: medium;
   font-weight: 100;
 }
@@ -719,9 +707,6 @@ ul li:not(:last-child) {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-    body {
-      
-    }
 
     h2{
       font-size: 2em;
@@ -730,7 +715,6 @@ ul li:not(:last-child) {
     h3{
       font-size: 1em;
     }
-
 
     .grid-container-mid{
       display: flex;
@@ -803,6 +787,8 @@ img{
   margin-right:0%;
   padding-right:0%;
   padding-left: 0%;
+  display: block;
+  margin-left: 7%;
 }
 
 ul li {
@@ -812,6 +798,7 @@ ul li {
 ul li .date {
   display: block; 
   margin-top: 6%;
+  border-radius: calc(var(--dateH) / 2);
 }
 
 ul li .date::before {
