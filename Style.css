@@ -406,12 +406,19 @@ h7{
 }
 
 .mySlides3{
+  width: 90%;
+  margin-top: 0%;
+  height: auto;
+  margin-left: 0%;
+}
+
+.mySlides4{
   width:70%;
   height: auto;
   margin-top: 0%;
 }
 
-.mySlides4{
+.mySlides5{
   width:70%;
   height: auto;
   margin-top: 0%;
@@ -438,7 +445,8 @@ h6{
 .prev1, .next1,
 .prev2, .next2,
 .prev3, .next3,
-.prev4, .next4 {
+.prev4, .next4,
+.prev5, .next5 {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -462,14 +470,19 @@ h6{
 }
 
 .prev3, .next3 {
-  margin-top: 45%;
+  margin-top: 20%;
+  margin-left: -10%;
 }
 
 .prev4, .next4 {
+  margin-top: 45%;
+}
+
+.prev5, .next5 {
   top: 50%;
 }
 
-.next4 {
+.next5 {
   right: 0;
 }
 
@@ -477,11 +490,16 @@ h6{
   margin-left: 75%;
 }
 
+.next3 {
+  margin-left: 90%;
+}
+
+
 .next2 {
   margin-left: 110%;
 }
 
-.next3 {
+.next4 {
   margin-left: 80%;
 }
 
@@ -489,7 +507,8 @@ h6{
 .prev1:hover, .next1:hover,
 .prev2:hover, .next2:hover,
 .prev3:hover, .next3:hover,
-.prev4:hover, .next4:hover {
+.prev4:hover, .next4:hover,
+.prev5:hover, .next5:hover {
   background-color: #052524;
 }
 
@@ -841,22 +860,37 @@ h6 {
 }
 
 .mySlides2 {
-  width: 90%;
+  margin-left: 1%;
 }
 
 .prev2, .next2 {
-  padding: 0%;
+  margin-top: 15%;
+  margin-left: -8%;
 }
 
 .next2 {
-  margin-left: 97%;
+  margin-left: 98%;
 }
 
 .mySlides3 {
-  margin-left: 15%;
+  margin-left: 6%;
+}
+
+.prev3, .next3 {
+  padding: 0%;
+  margin-left: 0%;
+  margin-top: 22%;
 }
 
 .next3 {
+  margin-left: 98%;
+}
+
+.mySlides4 {
+  margin-left: 15%;
+}
+
+.next4 {
   margin-left: 86%;
 }
 

@@ -73,33 +73,47 @@ Op basis van hun quizresultaten, gecombineerd met de keuzes en resultaten van ee
     <img class="mySlides2" src="Images/Portfolio/KomsomolTruth4.png">
   </div>
 
-  <!--Posters-->
+  <!--VR Game-->
   <div class="slide-container">
     <a class="prev3" onclick="plusDivs(-1, 2)">&#10094;</a>
     <a class="next3" onclick="plusDivs(1, 2)">&#10095;</a>
-    <img class="mySlides3" src="Images/Portfolio/CluePoster.png">
-    <img class="mySlides3" src="Images/Portfolio/Spies.png">
-    <img class="mySlides3" src="Images/Portfolio/onlinecardgamesposter.png">
+    <img class="mySlides3" src="Images/Portfolio/VRGame1.png">
+    <img class="mySlides3" src="Images/Portfolio/VRGame2.png">
   </div>
 
+  <div>
+    <h7>NaviGators</h7>
+    <p>NaviGators is een VR-spel waarmee verschillende navigatiemethoden in virtual reality worden bestudeerd. Spelers testen één van de drie navigatiestrategieën: kompas, architectuur of wegmarkeringen zoals paaltjes met richtingaanwijzers. Het spel biedt inzicht in hoe deze methoden worden ervaren binnen een virtuele omgeving.</p>
+  </div>
+
+
+  <!--Posters-->
   <div>
     <h7>Promo Posters</h7>
     <p>Deze posters heb ik ontworpen voor activiteiten en evenementen van Sticky, specifiek voor de commissie C.A.R.D.S. Omdat het om spelletjesactiviteiten ging, heb ik gekozen voor een speelse en informele stijl die goed bij het thema past.</p>
   </div>
 
+  <div class="slide-container">
+    <a class="prev4" onclick="plusDivs(-1, 3)">&#10094;</a>
+    <a class="next4" onclick="plusDivs(1, 3)">&#10095;</a>
+    <img class="mySlides4" src="Images/Portfolio/CluePoster.png">
+    <img class="mySlides4" src="Images/Portfolio/Spies.png">
+    <img class="mySlides4" src="Images/Portfolio/onlinecardgamesposter.png">
+  </div>
+
     <!--Pirate Cards-->
+    <div class="slide-container">
+      <img class="mySlides5" src="Images/Portfolio/EscapeFranseVloot.png">
+      <img class="mySlides5" src="Images/Portfolio/SasPirate.png">
+      <img class="mySlides5" src="Images/Portfolio/DickPirate.png">
+      <img class="mySlides5" src="Images/Portfolio/YellowSkullKing.png">
+      <a class="prev5" onclick="plusDivs(-1, 4)">&#10094;</a>
+      <a class="next5" onclick="plusDivs(1, 4)">&#10095;</a>
+    </div>
+
     <div>
       <h7>Piraten Kaarten</h7>
       <p>Een van mijn recente hobbyprojecten is het herontwerpen van het kaartspel Skull King, waarbij ik mijn vrienden en mijzelf heb afgebeeld als piraten. Dit project laat perfect zien wat ik momenteel kan op het gebied van Photoshop en GIMP.</p>
-    </div>
-  
-    <div class="slide-container">
-      <img class="mySlides4" src="Images/Portfolio/EscapeFranseVloot.png">
-      <img class="mySlides4" src="Images/Portfolio/SasPirate.png">
-      <img class="mySlides4" src="Images/Portfolio/DickPirate.png">
-      <img class="mySlides4" src="Images/Portfolio/YellowSkullKing.png">
-      <a class="prev4" onclick="plusDivs(-1, 3)">&#10094;</a>
-      <a class="next4" onclick="plusDivs(1, 3)">&#10095;</a>
     </div>
 
 </section>
@@ -117,13 +131,14 @@ Op basis van hun quizresultaten, gecombineerd met de keuzes en resultaten van ee
 
 
 <script>
-var slideIndex = [1, 1, 1, 1];  // Add a third entry for the third slideshow
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];  // Add "mySlides3" for the third slideshow
+var slideIndex = [1, 1, 1, 1, 1];  // Add a third entry for the third slideshow
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"];  // Add "mySlides3" for the third slideshow
 
 showDivs(1, 0); // Show the first slide of the first slideshow
 showDivs(1, 1); // Show the first slide of the second slideshow
 showDivs(1, 2); // Show the first slide of the third slideshow
 showDivs(1, 3); // Show the first slide of the third slideshow
+showDivs(1, 4); // Show the first slide of the third slideshow
 
 function plusDivs(n, no) {
   showDivs(slideIndex[no] += n, no);  // Update the slideIndex for the correct slideshow
