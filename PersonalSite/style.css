@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Lobster;
+  src: url(Fonts/Lobster-Regular.ttf);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #0E0E14;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+img.bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}
+
+h1{ 
+    color: black;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-family: Lobster;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: 4em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.container > div {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
