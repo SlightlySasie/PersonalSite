@@ -1,0 +1,61 @@
+body{
+    font-family: Poppins;
+    color: black;
+}
+
+h1{
+    font-size: 3em;
+    text-decoration: none;
+    font-family: Poppins;
+    margin: 0%;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+p.uppertitle{
+    font-size: 1em;
+    color: #393939;
+    margin-bottom: 0%;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 5%;  /* for e.g: value = 40px*/
+}
+
+.twogrid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1.5%;
+    margin-left: 10%;
+}
+
+p.keytitle{
+    font-size: 1.2em;
+    margin: 0%;
+    margin-bottom: 1%;
+}
+
+p.keyparts{
+    font-size: 1.2em;
+    margin: 0%;
+}
+
+.threegrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 2%;
+}
+
+.projecttitle{
+    width: auto;
+    height: 40%;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
