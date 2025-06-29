@@ -1,0 +1,299 @@
+
+.navbar{
+  position: sticky;
+  width: 100%;
+  background: #ffffff;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+.menu-items{
+  order: 2;
+  display: flex;
+  margin: 1.5% 15% 0% 70%;
+  text-align: right;
+}
+
+.menu-items li{
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar a{
+  color: #0E0E14;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+  color: #b22f4e;
+}
+
+img{
+  width: 25%;
+}
+
+body{
+    font-family: Poppins;
+    color: black;
+}
+
+h1{
+    font-size: 3em;
+    text-decoration: none;
+    font-family: Poppins;
+    margin: 0%;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+p.uppertitle{
+    font-size: 1em;
+    color: #393939;
+    margin-bottom: 0%;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 5%;  /* for e.g: value = 40px*/
+}
+
+.twogrid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1.5%;
+    margin-left: 10%;
+}
+
+p.plaatboeftext{
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0%;
+    margin-right: 15%;
+}
+
+.projecttwogrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 0%;
+}
+
+img.plaatboefimg{
+    width: 80%;
+    margin: 0% 10%;
+    border-radius: 2%;
+}
+
+.center{
+  text-align: center;
+}
+
+img.plaatboefdesktop{
+  width: 60%;
+}
+
+ul{
+    margin: 0%;
+}
+
+p.keytitle{
+    font-size: 1.2em;
+    margin: 0%;
+    margin-bottom: 1%;
+}
+
+p.centertext{
+    margin: 0% 15% 0% 15%;
+}
+
+li.keyparts{
+    font-size: 1em;
+    margin: 0%;
+}
+
+.threegrid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 2%;
+}
+
+.projectimg{
+    width: 75%;
+    display: block;
+    margin-bottom: 0%;
+}
+
+.centerimg{
+    display: block;
+  margin: 3% auto 0% auto;
+  width: 60%;
+}
+
+.solvelist{
+  margin: 2% 15% 0% 15%;
+}
+
+.imagerow{
+    display: flex;
+    margin: 2% 0% 0% 20%;
+    text-align: center;
+}
+
+.references{
+  margin: 3% 10% 0% 10%;
+}
+
+p.referencetext{
+  color: #393939;
+  font-size: x-small;
+}
+
+footer{
+  text-align: right;
+}
+
+.footerbutton{
+  background-color: #ffffff;
+  color: #0E0E14;
+  border: none;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  width: 200px;
+  font-family: Poppins;
+  margin-right: 13%;
+  border-radius: 50px;
+}
+
+.footerbutton:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.button{
+    background-color: #0E0E14;
+    color: white;
+    border: none;
+    padding: 15px 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 50px;
+    width: 250px;
+    font-family: Poppins;
+    margin-top: 3%;
+    box-shadow: 7px 7px 5px #b22f4e6c;
+}
+
+a.button:hover{
+  background-color: #b22f4e;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-items {
+    order: 2;
+    display: flex;
+    margin: 4% 0% 0% 0%;
+    text-align: left;
+  }
+
+  body{
+    margin: 0% 10%;
+  }
+  
+  .twogrid{
+    display: block;
+    margin: 0%;
+  }
+
+  .threegrid{
+    display: block;
+    margin: 0%;
+  }
+
+  p.uppertitle{
+    font-size: 0.5em;
+    margin: 0%;
+  }
+
+  .tab{
+      margin: 0%;
+  }
+
+  h1{
+    font-size: 2em;
+    margin: 0%;
+  }
+
+  p.keytitle{
+    font-size: 0.8em;
+    margin: 0%;
+  }
+
+  p.keyparts{
+    font-size: 0.8em;
+    margin: 0%;
+  }
+
+  h2{
+    font-size: 1.2em;
+    margin: 4% 0%;
+  }
+
+  li.keyparts{
+    font-size: 0.8em;
+  }
+
+  .solvelist {
+    margin: 2% 3% 0% 3%;
+}
+
+  a.button{
+  width: 100px;
+  font-size: 0.8em;
+}
+
+p.centertext{
+  font-size: 0.8em;
+  margin: 0%
+}
+
+li{
+  font-size:0.8em;
+}
+
+p.referencetext{
+  font-size: 0.5em;
+}
+
+.projecttwogrid{
+  display: block;
+}
+
+p.plaatboeftext{
+  font-size: 0.8em;
+  margin-right: 5%;
+}
+
+}
+
+
+@font-face {
+  font-family: Poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
+

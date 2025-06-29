@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dcfee6d073.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <script src="js.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/BigIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/MediumIcon.png">
@@ -18,11 +19,11 @@
 <body>
 <div class="black">
     <section class="title">
-        <img src="Images/WaterColorBackground_PhotoGrid.png" class="bg">
+        <img src="Images/SplashBackground.png" class="main">
     </section>
 
     <section class="aboutme">
-        <h2>Who am I?</h2>
+        <h2><b>Who am I?</b></h2>
     <div class="container">
         <div>
             <h3> <br>Profile</h3>
@@ -56,7 +57,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div id="contactme" class="contact">
         <h2>Reach out to create something togheter!</h2>
             <div class="buttoncontainer">
                 <div class="buttondiv">
@@ -76,20 +77,21 @@
         <img src="Images/epsilonbackground.png" class="bg">
     </div>
 
-    <section class="projects">
+    <section id="project" class="projects">
         <h4>Projects</h4>
         <div class="projectcontainer">
-            <div><img src="Images/ChoosiversityProject.png" class="project"></div>
+            <div><img src="Images/Choosiversity/ChoosiversityProject.png" class="project"></div>
             <div>
                 <h5>Choosiversity</h5>
-                <p class="projecttext">Text over project</p>
+                <p class="projecttext">Created a higher education recommendation application which incorporates gamified elements and 
+                    fun aesthetic to make the experience of choosing a school or study engaging and less stressful.</a></p>
                 <p class="mobilecenter">
                     <a class="projectbutton" href="choosiversity.html">View Project</a>
                 </p>
             </div>
         </div>
         <div class="projectcontainer">
-            <div><img src="Images/PlaatboefProject.png" class="project"></div>
+            <div><img src="Images/Plaatboef/PlaatboefProject.png" class="project"></div>
             <div>
                 <h5>Website Redesign: <br> De Plaatboef</h5>
                 <p class="projecttext">Applied UI and UX benchmarks to redesign the website of De Plaatboef. With these benchmarks in mind, I touched up the website and gave it a new fresh aesthetic, ready for the modern times.</p>
@@ -99,7 +101,7 @@
             </div>
         </div>
         <div class="projectcontainer">
-            <div><img src="Images/projectHobby.png" class="project"></div>
+            <div><img src="Images/VaH/projectHobby.png" class="project"></div>
             <div>
                 <h5>Volunteerwork and Hobby Projects</h5>
                 <p class="projecttext">I love using my creativity and design skills to make things for myself and others. I have created posters for both student and local events, invitations for parties and have designed all kinds of random stuff like playing cards.</p>
@@ -109,6 +111,10 @@
             </div>
         </div>
     </section>
+
+    <footer>
+    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top"><i class="fa-solid fa-chevron-up"></i> Back to top</button>
+    </footer>
 
 </body>
 </html>

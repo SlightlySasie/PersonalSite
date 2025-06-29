@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sacha Vermeer</title>
-    <link rel="stylesheet" href="plaatboefstyle.css">
+    <link rel="stylesheet" href="projectstyle.css">
     <script src="https://kit.fontawesome.com/dcfee6d073.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <script src="js.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/BigIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/MediumIcon.png">
@@ -16,14 +17,46 @@
 
 
 <body>
-    <h1>Website Redesign: De Plaatboef</h1>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html#project">Projects</a></li>
+                <li><a href="index.html#contactme">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="twogrid">
         <div>
-            <img src="Images/Plaatboef/plaatboefinspo.png" alt="">
+            <img class="projectimg" src="Images/Plaatboef/PlaatboefProject.png">
+        </div>
+
+        <div>
+            <p class="uppertitle"><i>Personal Project<span class="tab"></span> May 2025</i></p>
+            <h1>Website Redesign: De Plaatboef</h1>
+            <p class="keytitle"><b><em>Key responsibilities:</b></em></p>
+                <div class="threegrid">
+                    <div>
+                        <p class="keyparts"><b>Visual & Information Design</b></p>
+                        <ul>
+                            <li class="keyparts">Rapid Prototyping</li>
+                            <li class="keyparts">Webdesign</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="keyparts"> </p>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="projecttwogrid">
+        <div>
+            <img class="plaatboefimg" src="Images/Plaatboef/plaatboefinspo.png" alt="">
         </div>
         <div>
-        <p>I started this project as a way to practice designing in Figma.
+        <p class="plaatboeftext">I started this project as a way to practice designing in Figma.
             The website of <i>De Plaatboef</i> was chosen because, in my opinion, their current website is quite outdated, both in design and available information.
             The site can be seen on the "Inspiration and Assets Board".
             I found this design choice a shame, as the business has a very interesting style and customer base, which should be reflected in their website.
@@ -37,25 +70,24 @@
     </div>
 
 
-    <div class="twogrid">
-            <div><a class="button1 button" href="https://www.figma.com/proto/1Y2JPvjw6AuUEQ4nIljKv1/Figma-Tutorial?page-id=3045%3A2&node-id=3047-13&p=f&viewport=-1198%2C616%2C0.39&t=ec7geLjcGxQDFLDv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3047%3A13&show-proto-sidebar=1" style="margin-left: 60%;">View Desktop Prototype</a></div>
-            <div><a class="button2 button" href="https://www.figma.com/proto/1Y2JPvjw6AuUEQ4nIljKv1/Figma-Tutorial?page-id=3045%3A2&node-id=3090-233&p=f&viewport=-1198%2C616%2C0.39&t=ec7geLjcGxQDFLDv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3090%3A233&show-proto-sidebar=1">View Mobile Prototype</a></div>
+    <div class="center">
+            <a class="button" href="https://www.figma.com/proto/1Y2JPvjw6AuUEQ4nIljKv1/Figma-Tutorial?page-id=3045%3A2&node-id=3047-13&p=f&viewport=-1198%2C616%2C0.39&t=ec7geLjcGxQDFLDv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3047%3A13&show-proto-sidebar=1">View Desktop Prototype</a>
+            <a class="button" href="https://www.figma.com/proto/1Y2JPvjw6AuUEQ4nIljKv1/Figma-Tutorial?page-id=3045%3A2&node-id=3090-233&p=f&viewport=-1198%2C616%2C0.39&t=ec7geLjcGxQDFLDv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3090%3A233&show-proto-sidebar=1">View Mobile Prototype</a>
     </div>
 
     <div class="imagerow">
-        <div>
             <img src="Images/Plaatboef/plaatboefMobile1.png">
-        </div>
-        <div>
             <img src="Images/Plaatboef/plaatboefMobile2.png">
-        </div>
-        <div>
             <img src="Images/Plaatboef/plaatboefMobile3.png">
-        </div>
     </div>
+<div class="center">
+<img class="plaatboefdesktop" src="Images/Plaatboef/Plaatboef1.png">
+<img class="plaatboefdesktop" src="Images/Plaatboef/Plaatboef2.png">
+</div>
 
-<img src="Images/Plaatboef/Plaatboef1.png">
-<img src="Images/Plaatboef/Plaatboef2.png">
+<footer>
+    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top"><i class="fa-solid fa-chevron-up"></i> Back to top</button>
+</footer>
 
 </body>
 </html>

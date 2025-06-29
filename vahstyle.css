@@ -39,6 +39,67 @@ p{
   width: 100%;
   border-radius: 2%;
 }
+footer{
+  text-align: right;
+}
+
+.footerbutton{
+  background-color: #ffffff;
+  color: #0E0E14;
+  border: none;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  width: 200px;
+  font-family: Poppins;
+  margin-right: 13%;
+  border-radius: 50px;
+}
+
+.footerbutton:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar{
+  position: sticky;
+  width: 100%;
+  background: #ffffff;
+  top: 0;
+  overflow: hidden;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+.menu-items{
+  order: 2;
+  display: flex;
+  margin: 1.5% 15% 0% 70%;
+  text-align: right;
+}
+
+.menu-items li{
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar a{
+  color: #0E0E14;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+  color: #b22f4e;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -46,23 +107,34 @@ p{
     flex: 50%;
     max-width: 50%;
   }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+  .menu-items {
+  order: 2;
+  display: flex;
+  margin: 4% 0% 0% 0%;
+  text-align: left;
   }
 
-  h1{
+    h1{
     font-size: 2em;
   }
 
   p{
     font-size: 1em;
   }
+
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
 
 @font-face {
   font-family: Poppins;
