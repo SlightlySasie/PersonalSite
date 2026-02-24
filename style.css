@@ -8,27 +8,89 @@
   src: url(Fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: SpecialElite;
+  src: url(Fonts/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+  font-family: Fanzine;
+  src: url(Fonts/fanzine.regular.ttf);
+}
+
 body, html {
   height: 100%;
   margin: 0;
-  background-color: white;
-  font-family: Poppins;
+  background-image: url("Images/white-linen-background.jpg");
+  font-family: SpecialElite;
 }
 
 .center{
   text-align: center;
 }
 
-.black{
-  background-color: #0E0E14;
-    overflow: hidden;
-}
 
 .title {
   position: relative;
   text-align: center;
   color: white;
-  background-color: #0E0E14;
+}
+
+.titlebutton{
+  font-family: Fanzine;
+  font-size: 3vw;
+  margin: 5%;
+  width: 125%;
+  display: grid;
+}
+
+.titlebuttoncontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5%;
+  position: absolute;
+  padding: 10%;
+  right: 5%;
+  margin-top: 0.8%;
+}
+
+
+.flagcontainer{
+  display: grid;
+  gap: 20%;
+  position: absolute;
+  margin-top: 11%;
+  right: 5%;
+  width: 50px;
+  height: 80px;
+  overflow: hidden;
+}
+
+button.enflag{
+  background-image: url('Images/ukflag.jpg');
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+button.nlflag{
+  background-image: url('Images/dutchflag.jpg');
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-btn{
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 img.bg {
@@ -39,23 +101,29 @@ img.bg {
 }
 
 
-@keyframes example {
+/* @keyframes example {
   from {opacity: 0.25;}
   to {opacity: 1;}
-}
+} */
 
 img.main{
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
+  width: 50%;
+  position: absolute;
+  margin-top: 8%;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
 }
 
 .overflow{
+  width: 300px;
+  height: 200px;
   overflow: hidden;
+}
+
+p{
+  text-align: left;
 }
 
 h1{ 
@@ -64,35 +132,161 @@ h1{
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
-    font-family: Poppins;
+    font-size: 3vw;
+    font-family: SpecialElite;
 }
 
 h2{
-  color: white;
-  text-align: center;
-  font-size: 5em;
-  font-family: Poppins;
-  margin: 0%;
-  background-color: #0E0E14;
+  color: black;
+  text-align: left;
+  font-size: 6vw;
+  font-family: Fanzine;
+  margin: 15% 0% 0% 15%;
 }
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 50% 50%;
   padding: 0px 10px;
-  background-color: #0E0E14;
 }
 
 .container > div {
   padding: 20px;
-  font-size: 30px;
+  font-size: 2vw;
   text-align: center;
-  color: white;
+  margin-top: 20%;
 }
 
 .contact{
-  background-color: #0E0E14;
+  position: absolute;
+  margin-top: -24%;
+  margin-left: 13%;
+  width:20%; 
+}
+
+i{
+  margin-right: 10px;
+}
+
+a{
+  text-decoration-line: none;
+  color:black;
+}
+
+p.contact1{
+  font-size: 2vw;
+  margin-left: 12%;
+  margin-bottom: 5%;
+
+}
+
+a.contact1 {
+  font-size: 1.5vw;
+  text-align: left;
+  margin-left: -25%;
+}
+
+a.contact2{
+  text-align: left;
+  font-size: 1.5vw;
+  margin-left: -8%;
+}
+
+.aboutme{
+  margin-top:-10%;
+}
+
+p.aboutme{
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+img.aboutme{
+  width: 100%;
+  margin-top: 9%;
+}
+
+.resume {
+  position: relative;
+  text-align: center;
+  color: black;
+  pointer-events: none;
+}
+
+.stickercontainer{
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+img.scrap{
+  width: 115%;
+  margin-left: -15%;
+  margin-top: -30%;
+  overflow: hidden;
+}
+
+h3{
+  font-family: Fanzine;
+  color: black;
+  font-size: 5vw;
+  margin: 0% 0% 0% -40%;
+}
+
+h6{
+  font-family: Fanzine;
+  color: black;
+  font-size: 5vw;
+  margin: 0% 0% -2% -20%;
+}
+
+h7{
+  font-family: Fanzine;
+  color: black;
+  font-size: 5vw;
+  margin: -5% 0% 0% -65%;
+  font-style: normal;
+}
+
+img.edustickers{
+  width:100%;
+}
+
+p.edu{
+  text-align: left;
+  margin-top: 5.5%;
+  margin-left: -4%;
+  margin-bottom: 1%;
+  font-size: 2vw;
+}
+
+.top-left {
+  position: absolute;
+  top: -90%;
+  left: 4%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8%;
+  left: 7%;
+}
+
+img.expstickers{
+  width:75%;
+}
+
+p.exp{
+  margin-top: 3.3%;
+  margin-left: -4%;
+  margin-bottom: 1%;
+  font-size: 2vw;
+}
+
+.center-right {
+  position: absolute;
+  top: -60%;
+  left: 55%;
 }
 
 .buttoncontainer{
@@ -114,9 +308,8 @@ a.links{
 
 .logocontainer{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 10px;
-  background-color: #0E0E14;
+  grid-template-columns: 10% 10% 10% 10% 10% 10%;
+  padding: 0px;
 }
 
 .logo{
@@ -124,32 +317,39 @@ a.links{
 }
 
 img.logo{
-  width: 50%;
+  width: 80%;
   height: auto;
 }
 
-a.button{
-  background-color: white; /* Green */
-  color: #0E0E14;
-  border: none;
-  padding: 15px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 50px;
-  width: 250px;
-  font-family: Poppins;
-  box-shadow: 7px 7px 5px #b22f4e6c;
+p.skills{
+  font-size: 1.5vw;
+  margin-top: -3%;
+  margin-bottom: 0%;
 }
 
-a.button:hover{
-  background-color: #b22f4e;
-  color: white;
+p.fuck1{
+  margin: 0% 0% 9% -4%;
+  font-size: 2vw;
 }
 
-a.button3{
-  margin-top: 2.5%;
+p.fuck2{
+  margin: 0% 0% 7.5% -4%;
+  font-size: 2vw;
+}
+
+.skillcontainer{
+  display: grid;
+  grid-template-columns: 25% 25%;
+}
+
+ul{
+  margin: 0%;
+}
+
+li{
+  font-size: 1.5vw;
+  text-align: left;
+  margin-top: 10%;
 }
 
 .projects{
@@ -168,40 +368,23 @@ a.button3{
 
 h4{
   text-align: center;
-  font-family: Poppins;
-  font-size: 4em;
+  font-family: Fanzine;
+  font-size: 6vw;
   margin: 2% 0%;
 }
 
 h5{
-  font-size: 3em;
-  margin-top: 2%;
-  margin-bottom: 0%;
+  font-size: 3vw;
+  margin-bottom: 3%;
+  font-weight: lighter;
+  margin-right: 29%;
 }
 
 p.projecttext{
-  font-size: 1.5em;
+  font-size: 1.5vw;
   margin-right: 40%;
   margin-top: 0%;
-}
-
-a.projectbutton{
-  background-color: #0E0E14;
-  color: white;
-  border: none;
-  padding: 10px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 50px;
-  width: 200px;
-  font-family: Poppins;
-  box-shadow: 7px 7px 5px #b22f4e6c;
-}
-
-a.projectbutton:hover{
-  background-color: #b22f4e;
+  margin-bottom: 8%;
 }
 
 img.project{
@@ -213,105 +396,379 @@ footer{
 }
 
 .footerbutton{
-  background-color: #ffffff;
-  color: #0E0E14;
+  position: relative;
+  padding: 1.5rem;
+  font-family: SpecialElite;
+  text-align: center;
+  font-size: 1.2vw;
   border: none;
-  padding: 10px 0px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  width: 200px;
-  font-family: Poppins;
-  margin-right: 13%;
-  margin-bottom: 1%;
-  border-radius: 50px;
+  background: none;
 }
 
-.footerbutton:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.footerbutton::before,
+.footerbutton::after {
+  content: ""; /* Required for pseudo-elements to render */
+  position: absolute;
+  border: 2px solid black; /* Border color and thickness */
+}
+ 
+/* Top-Left Corner */
+.footerbutton::before {
+  top: 10px; /* Distance from top edge */
+  left: 10px; /* Distance from left edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-right: none; /* Hide right border */
+  border-bottom: none; /* Hide bottom border */
+}
+ 
+/* Bottom-Right Corner */
+.footerbutton::after {
+  bottom: 10px; /* Distance from bottom edge */
+  right: 10px; /* Distance from right edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-left: none; /* Hide left border */
+  border-top: none; /* Hide top border */
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg{
-    width: 200%;
-    margin-left: -50%;
-    margin-right: -50%;
-    object-fit: cover;
+.cornerborderbutton {
+  position: relative; /* Required for absolute positioning of pseudo-elements */
+  width: 300px;
+  padding: 2rem;
+  font-family: SpecialElite;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-left: 15%;
+  font-weight: 300;
+}
+
+.cornerborderbutton::before,
+.cornerborderbutton::after {
+  content: ""; /* Required for pseudo-elements to render */
+  position: absolute;
+  border: 2px solid black; /* Border color and thickness */
+}
+ 
+/* Top-Left Corner */
+.cornerborderbutton::before {
+  top: 10px; /* Distance from top edge */
+  left: 10px; /* Distance from left edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-right: none; /* Hide right border */
+  border-bottom: none; /* Hide bottom border */
+}
+ 
+/* Bottom-Right Corner */
+.cornerborderbutton::after {
+  bottom: 10px; /* Distance from bottom edge */
+  right: 10px; /* Distance from right edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-left: none; /* Hide left border */
+  border-top: none; /* Hide top border */
+}
+
+@media screen  and (max-width: 1400px) and (min-width: 768px)  { /* Specific to this particular image */
+  h2{
+    margin-top: 15%
+  }
+  .flagcontainer{
+    width: 40px;
+    height: 60px;
   }
 
-  img.main{
-    width: 200%;
-    margin-left: -50%;
-    margin-right: -50%;
-    object-fit: cover;
+  img.edustickers {
+    width: 80%;
   }
 
-  .mobilecenter{
+  .top-left {
+    left: 1%;
+  }
+
+  h3{
+    margin-left: -50%;
+  }
+
+  p.edu {
+    margin-top: 4%;
+  }
+
+  p.fuck1 {
+    margin: 0% 0% 6% -4%;
+  }
+
+  .bottom-left {
+    bottom: 7%;
+    left: 4%;
+  }
+
+  h6 {
+    margin: 0% 0% -2% -35%;
+  }
+
+  img.expstickers {
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) { /* Specific to this particular image */
+  h2{
+    margin-top: 15%
+  }
+
+  .flagcontainer{
+    width: 30px;
+    height: 45px;
+  }
+
+  .top-left {
+    margin-top: 50%;
+    margin-left: -3%;
+  }
+
+  .contact {
+    margin-left: 12%;
+    margin-top: -22.5%;
+  }
+
+  img.edustickers {
+    width: 70%;
+  }
+
+  h3{
+    margin-left: -60%;
+  }
+
+  p.edu {
+    margin-top: 4%;
+  }
+
+  p.fuck1 {
+    margin: 0% 0% 6% -4%;
+  }
+
+  .bottom-left {
+    bottom: 2%;
+    left: 4%;
+  }
+
+  img.expstickers {
+    width: 64%;
+  }
+
+  h5{
+    font-size: 4vw;
+    margin-top: 20%;
+  }
+
+  p.projecttext {
+    font-size: 2vw;
+    margin-right: 15%;
+  }
+
+  .cornerborderbutton {
+    font-size: 2vw;
+  }
+
+  .projectcontainer {
+    grid-template-columns: 50% 50%;
+    padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 426px) and (min-width: 100px) { /* Specific to this particular image */
+  img.main {
+    width: 80%;
+    margin-top: 6%;
+  }
+
+  .flagcontainer{
+    width: 25px;
+    height: 40px;
+  }
+  
+  .titlebuttoncontainer {
+  right: 12%;
+  }
+
+  .titlebutton {
+  font-size: 5vw;
+  }
+
+  h2 {
+    margin-top: 30%;
     text-align: center;
+    margin-left: 0%;
+    font-size: 10vw;
   }
 
-  .introtext{
-    font-size: 0.6em;
-    margin: 0% 5%;
+  p.aboutme {
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%; 
+    margin-top: 5%;
+    font-size: 4vw;
+  }
+
+  img.aboutme {
+    width: 90%;
+    margin-top: -25%;
+  }
+
+  .resume{
+    margin-top: 20%;
+  }
+
+  .contact{
+    margin-left: 25%;
+    width: 40%;
+    margin-top: -41%;
+  }
+
+  p.contact1 {
+    font-size: 4vw;
+  }
+
+  a.contact1 {
+    font-size: 2.5vw; 
+    margin-left: -30%;
+  }
+
+  a.contact2 {
+    font-size: 2.5vw;   
+    margin-left: -24%;
+  }
+
+  img.scrap {
+    width: 185%;
+  }
+
+  .top-left{
+    top: -10%;
+  }
+
+  h3 {
+    font-size: 10vw;
+    margin: -9% 0% -3% -30%;
+  }  
+  
+  img.edustickers {
+    width: 110%;
+  }
+
+  p.edu {
+    font-size: 4vw;
+  }
+
+  p.fuck1 {
+    font-size: 4vw;
+    margin: 0% 0% 7% -4%;
+  }
+
+  .bottom-left{
+    bottom: 4%;
+  }
+
+  h6 {
+    font-family: Fanzine;
+    color: black;
+    font-size: 9.5vw;
+    margin: 0% 0% -7% -6%;
+  }
+
+  img.expstickers {
+    width: 80%;
+    margin-left: 30%;
+    margin-top: 15%;
+  }
+
+  p.exp {
+    font-size: 4vw;
+    margin: 7% 0% 0% 0%;  
+  }
+
+  p.fuck2 {
+    font-size: 4vw;
+    margin: 1% 0% 0% 0%;
+  }
+
+  .center-right{
+    bottom: 0%;
+    top: 100%;
+    width: 100%;
+    left: 25%;
+  }
+
+  h7 {
+    font-size: 10vw;
   }
 
   .container{
     display: block;
   }
 
-  h1{
-    font-size: 1.3em;
-    margin: 0% 5%;
-    width: auto;
-    left: 0%;
-    transform: translate(0px, 0px);
+  .container > div {
+    margin-top: 0%;
   }
 
-  h2{
-    font-size: 2.5em;
+  p{
+    font-size: 4vw;
   }
 
-  h3{
-    font-size: 0.6em;
-    margin: 0% 0% 5%;
+  p.skills{
+    font-size: 3.5vw;
+  }
+
+.logocontainer {
+    margin-left: -15%;
+  }
+
+  li{
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: -70%;
+  }
+
+  .projects{
+    margin-top: 85%;
   }
 
   h4{
-    font-size: 2.5em;
+    font-size: 10vw;
   }
 
-  h5{
-    font-size: 1.5em;
-    margin-left: 5%;
+  h5 {
+    font-size: 6vw;
+    margin-bottom: 3%;
+    margin-top: 3%;
   }
 
-  a.button{
-    width: 100px;
-    font-size: 1em;
+  p.projecttext {
+    font-size: 3vw;
+    margin: 0% 0% 0% 5%;
   }
 
-  .button3{
-    position: relative;
-    margin-bottom: 0%;
+  .projectcontainer {
+    display: block;
+    text-align: center;
+    padding-right: 12%
   }
 
-  img.logo{
-  width: 70%;
-  height: auto;
-}
+  img.project {
+    width: 75%;
+    align-items: center;
+  }
 
-.projectcontainer{
-  display: block;
-  padding-left: 10px;
-}
+  .cornerborderbutton {
+    padding: 1.5rem;
+    font-size: 3vw;
+    margin-left: 30%;
+    /* font-weight: 300; */
+  }
 
-p.projecttext{
-  margin: 0% 5%;
-  font-size: 1em;
-}
-
-a.projectbutton{
-  width: 100px;
-  font-size: 0.8em;
-}
+  .mobilecenter{
+    margin-top: 10%;
+  }
 }

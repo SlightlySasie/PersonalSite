@@ -1,6 +1,8 @@
-body{
-    font-family: Poppins;
-    color: black;
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("Images/white-linen-background.jpg");
+  font-family: SpecialElite;
 }
 
 h1{
@@ -137,6 +139,11 @@ footer{
 
 
 @font-face {
-  font-family: Poppins;
-  src: url(Fonts/Poppins-Regular.ttf);
+  font-family: SpecialElite;
+  src: url(Fonts/SpecialElite-Regular.ttf);
+}
+
+@font-face {
+  font-family: Fanzine;
+  src: url(Fonts/fanzine.regular.ttf);
 }

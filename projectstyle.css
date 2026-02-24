@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url("Images/white-linen-background.jpg");
+  font-family: SpecialElite;
+}
 
 .navbar{
   position: sticky;
@@ -43,15 +49,10 @@ img{
   width: 25%;
 }
 
-body{
-    font-family: Poppins;
-    color: black;
-}
-
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: Fanzine;
     margin: 0%;
 }
 
@@ -131,7 +132,7 @@ li.keyparts{
 }
 
 .projectimg{
-    width: 85%;
+    width: 75%;
     display: block;
     margin-bottom: 0%;
 }
@@ -174,7 +175,7 @@ footer{
   display: inline-block;
   font-size: 1rem;
   width: 200px;
-  font-family: Poppins;
+  font-family: SpecialElite;
   margin-right: 13%;
   border-radius: 50px;
 }
@@ -193,7 +194,7 @@ a.button{
     font-size: 25px;
     border-radius: 50px;
     width: 250px;
-    font-family: Poppins;
+    font-family: SpecialElite;
     margin-top: 3%;
     box-shadow: 7px 7px 5px #b22f4e6c;
 }
@@ -293,7 +294,11 @@ p.plaatboeftext{
 
 
 @font-face {
-  font-family: Poppins;
-  src: url(Fonts/Poppins-Regular.ttf);
+  font-family: SpecialElite;
+  src: url(Fonts/SpecialElite-Regular.ttf);
 }
 
+@font-face {
+  font-family: Fanzine;
+  src: url(Fonts/fanzine.regular.ttf);
+}
