@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dcfee6d073.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <script src="js.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/BigIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/MediumIcon.png">
@@ -17,104 +16,153 @@
 
 
 <body>
-<div class="black">
     <section class="title">
-        <img src="Images/SplashBackground.png" class="main">
+        <img class="main" src="Images/coverscrap.png">
+        <div class="titlebuttoncontainer">
+            <div><a class="titlebutton" href="#resume" data-lang-key="resume"></a></div>
+            <div><a class="titlebutton" href="#portfolio" data-lang-key="portfolio"></a></div>
+        </div>
+        <div class="flagcontainer">
+            <button id="btn-en" class="lang-btn enflag"></button>
+            <button id="btn-nl" class="lang-btn nlflag"></button>
+        </div>
     </section>
 
     <section class="aboutme">
-        <h2><b>Who am I?</b></h2>
-    <div class="container">
-        <div>
-            <h3> <br>Profile</h3>
-            <p class="introtext">I am a creative person who thrives on approaching tasks with a combination of analytical insights, an eye for detail and inventiveness. I'm looking for an entry level position to build my skills and work on improving processes.</p>
-        </div>
-        <div>
-            <h3>Academic <br> & Practical Skills</h3>
-            <p class="introtext">My master's degree in Human Computer Interaction allows me to design and prototype with a wide range of tools and apply theoretical knowledge to design and research processes.</p>
-        </div>
-        <div>
-            <h3>Interests <br> & Expertises</h3>
-            <p class="introtext">Approaching design from the user's perspective is most important to me. user friendliness is one of my primary goals. I aspire to innovate and reinvent, whether it’s through digital design or coming up with creative solutions for your problems.</p>
-        </div>  
-    </div>
 
-    <div class="logocontainer">
-        <div class="logo">
-            <img src="Images/Logos/CSSsplotsh.png" class="logo" title="CSS">
+    <div class="container" id="aboutme">
+        <div class="mobilecontainer">
+        <h2 data-lang-key="welcome"></h2>
+        <p class="aboutme" data-lang-key="intro"></p>
         </div>
-        <div class="logo">
-            <img src="Images/Logos/HTMLSplotch.png" class="logo" title="HTML">
-        </div>
-        <div class="logo">
-            <img src="Images/Logos/figmasplotsh.png" class="logo" title="Figma">
-        </div>
-        <div class="logo">
-            <img src="Images/Logos/StudioRsplotsh.png" class="logo" title="Studio R: programming language for statistical computing and data visualization">
-        </div>
-        <div class="logo">
-            <img src="Images/Logos/gimpsplotsh.png" class="logo" title="GIMP: GNU Image Manipulation Program">
+        <div>
+            <img src="Images/aboutme.png " class="aboutme">
+            <div class="contact">
+                <p class="contact1" data-lang-key="contact"></p>
+                <a href="https://www.linkedin.com/in/sacha-vermeer-73a0a2237/" class="contact1"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/<br>sacha-vermeer</a>
+                <br>
+                <a href="mailto:sachavermeer@hotmail.com" class="contact2"> <i class="fa-solid fa-envelope"></i>sapvermeer@gmail.com </a>
+            </div>
         </div>
     </div>
 
-    <div id="contactme" class="contact">
-        <h2>Reach out to create something togheter!</h2>
-            <div class="buttoncontainer">
-                <div class="buttondiv">
-                    <a class="button" href="https://www.linkedin.com/in/sacha-vermeer-73a0a2237/">LinkedIn</a>
+    </section>
+
+    <section class="resume" id="resume">
+        <div class="scrap"><img src="Images/Resume Scrap.png" class="scrap"> </div>
+        <div class="container">  
+            <div class="top-left">
+                <h3 data-lang-key="edu_title"></h3>
+                <div class="stickercontainer">
+                    <div>
+                        <img src="Images/Educationstickers.png" class="edustickers">
+                    </div>
+                    <div>
+                        <p class="edu" data-lang-key="edu1"></p>
+                        <p class="fuck1" data-lang-key="utrecht"></p>
+                        <p class="edu" data-lang-key="edu2"></p>
+                        <p class="fuck1" data-lang-key="utrecht"></p>
+                    </div>
                 </div>
-                <div class="buttondiv">
-                    <a class="button" href="mailto:sachavermeer@hotmail.com">Mail</a>
-                </div>    
+            </div>
+            <div class="bottom-left">
+                <h6 data-lang-key="exp_title"></h6>
+                <div class="stickercontainer">
+                    <div>
+                        <img src="Images/ExperienceStickers.png" class="expstickers">
+                    </div>
+                    <div>
+                        <p class="exp" data-lang-key="exp1"></p>
+                        <p class="fuck2" data-lang-key="utrecht"></p>
+                        <p class="exp" data-lang-key="exp2"></p>
+                        <p class="fuck2" data-lang-key="exp21"></p>
+                        <p class="exp" data-lang-key="exp3"></p>
+                        <p class="fuck2" data-lang-key="exp31"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="center-right">
+                <h7 data-lang-key="skills"></h7>
+                <p style="margin-top: 2%;" data-lang-key="softskills"></p>
+                    <div class="logocontainer">
+                        <div><img class="logo" src="Images/Logos/1656733637logo-canva-png-2086610774.png"> </div>
+                        <div></div>
+                        <div><img class="logo" src="Images/Logos/62e131df7fe3599fdd46ecb3-2579281575.png"> </div>
+                        <div></div>
+                        <div><img class="logo" src="Images/Logos/adobe-indesign7375.logowik.com-690936654.webp"> </div>
+                        <div></div>
+                    </div>
+                    <div class="logocontainer">
+                        <div></div>
+                        <div><img class="logo" src="Images/Logos/Adobe-Photoshop-Logo-2013-2015-1361289189.png"> </div>
+                        <div></div>
+                        <div><img class="logo" src="Images/Logos/gimp-logo-1925247621.png"> </div>
+                        <div></div>
+                        <div><img class="logo" src="Images/Logos/rstudio-logo-3033028090.png"> </div>
+                    </div>
+                <p data-lang-key="progskills"></p>
+                <p class="skills" data-lang-key="progskills2"></p>
+                <div class="skillcontainer">
+                    <div>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>R</li>
+                            <li>Python</li>
+                            <li>SQl</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <p class="center"><a class="button" href="Images/ResumeSachaVermeer.pdf">Resume</a></p>
-</div>
     
 
-    <div class="overflow">
-        <img src="Images/epsilonbackground.png" class="bg">
-    </div>
-
-    <section id="project" class="projects">
-        <h4>Projects</h4>
+    <section id="portfolio" class="projects">
+        <h4>Portfolio</h4>
         <div class="projectcontainer">
-            <div><img src="Images/Choosiversity/ChoosiversityProject.png" class="project"></div>
+            <div><img src="Images/Choosiversity/PortfolioChoosiversity (2).png" class="project"></div>
             <div>
                 <h5>Choosiversity</h5>
-                <p class="projecttext">Created a higher education recommendation application which incorporates gamified elements and 
-                    fun aesthetic to make the experience of choosing a school or study engaging and less stressful.</a></p>
+                <p class="projecttext" data-lang-key="choosiversity"></p>
                 <p class="mobilecenter">
-                    <a class="projectbutton" href="choosiversity.html">View Project</a>
+                    <a class="cornerborderbutton" href="choosiversity.html" data-lang-key="view_project"></a>
                 </p>
             </div>
         </div>
         <div class="projectcontainer">
-            <div><img src="Images/Plaatboef/PlaatboefProject.png" class="project"></div>
+            <div><img src="Images/Plaatboef/PortfolioPlaatboef.png" class="project"></div>
             <div>
                 <h5>Website Redesign: <br> De Plaatboef</h5>
-                <p class="projecttext">Applied UI and UX benchmarks to redesign the website of De Plaatboef. With these benchmarks in mind, I touched up the website and gave it a new fresh aesthetic, ready for the modern times.</p>
+                <p class="projecttext" data-lang-key="plaatboef"></p>
                 <p class="mobilecenter">
-                    <a class="projectbutton" href="plaatboef.html">View Project</a>
+                    <a class="cornerborderbutton" href="plaatboef.html" data-lang-key="view_project"></a>
                 </p>
             </div>
         </div>
         <div class="projectcontainer">
-            <div><img src="Images/VaH/projectHobby.png" class="project"></div>
+            <div><img src="Images/VaH/PortfolioHobby.png" class="project"></div>
             <div>
-                <h5>Volunteerwork and Hobby Projects</h5>
-                <p class="projecttext">I love using my creativity and design skills to make things for myself and others. I have created posters for both student and local events, invitations for parties and have designed all kinds of random stuff like playing cards.</p>
+                <h5 data-lang-key="title_hobby"></h5>
+                <p class="projecttext"  data-lang-key="hobby"></p>
                 <p class="mobilecenter">
-                    <a class="projectbutton" href="volunteerandhobby.html">View Projects</a>
+                    <a class="cornerborderbutton" href="volunteerandhobby.html"  data-lang-key="view_project"></a>
                 </p>
             </div>
         </div>
     </section>
 
     <footer>
-    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top"><i class="fa-solid fa-chevron-up"></i> Back to top</button>
+    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top" data-lang-key="top"><i class="fa-solid fa-chevron-up"></i></button>
     </footer>
 
+    <script src="js.js"></script>
 </body>
 </html>
