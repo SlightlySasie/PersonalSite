@@ -5,10 +5,89 @@ body, html {
   font-family: SpecialElite;
 }
 
+
+.title {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 10%;
+}
+
+.titlebutton{
+  font-family: Fanzine;
+  font-size: 3vw;
+  margin: 5%;
+  width: 125%;
+  display: grid;
+}
+
+a{
+  text-decoration-line: none;
+  color:black;
+}
+
+.titlebuttoncontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5%;
+  position: absolute;
+  right: 15%;
+  margin-top: -8.5%;
+}
+
+.flagcontainer{
+  display: grid;
+  gap: 20%;
+  position: absolute;
+  margin-top: -8.5%;
+  right: 2%;
+  width: 50px;
+  height: 80px;
+  overflow: hidden;
+}
+
+button.enflag{
+  background-image: url('Images/ukflag.jpg');
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+button.nlflag{
+  background-image: url('Images/dutchflag.jpg');
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-btn{
+  background-size: cover;
+  border: solid;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+img.main{
+  background-size: cover;
+  width: 50%;
+  position: absolute;
+  margin-top: -10%;
+  top: 0px;
+  right: -5%;
+  overflow: hidden;
+}
+
 h1{
     font-size: 5em;
     text-align: center;
     margin-top: 5%;
+    font-family: 'Fanzine';
 }
 
 p{
@@ -46,38 +125,42 @@ footer{
 }
 
 .footerbutton{
-  background-color: #ffffff;
-  color: #0E0E14;
+  position: relative;
+  padding: 1.5rem;
+  font-family: SpecialElite;
+  text-align: center;
+  font-size: 1.2vw;
   border: none;
-  padding: 10px 0px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1rem;
-  width: 200px;
-  font-family: Poppins;
-  margin-right: 13%;
-  border-radius: 50px;
+  background: none;
 }
 
-.footerbutton:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.footerbutton::before,
+.footerbutton::after {
+  content: ""; /* Required for pseudo-elements to render */
+  position: absolute;
+  border: 2px solid black; /* Border color and thickness */
+}
+ 
+/* Top-Left Corner */
+.footerbutton::before {
+  top: 10px; /* Distance from top edge */
+  left: 10px; /* Distance from left edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-right: none; /* Hide right border */
+  border-bottom: none; /* Hide bottom border */
+}
+ 
+/* Bottom-Right Corner */
+.footerbutton::after {
+  bottom: 10px; /* Distance from bottom edge */
+  right: 10px; /* Distance from right edge */
+  width: 40px; /* Horizontal line length */
+  height: 30px; /* Vertical line length */
+  border-left: none; /* Hide left border */
+  border-top: none; /* Hide top border */
 }
 
-.navbar{
-  position: sticky;
-  width: 100%;
-  background: #ffffff;
-  top: 0;
-  overflow: hidden;
-}
-
-.navbar-container{
-  display: flex;
-  justify-content: space-between;
-  height: 64px;
-  text-align: right;
-  padding-bottom: 5px;
-}
 
 .menu-items{
   order: 2;

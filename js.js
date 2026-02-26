@@ -12,6 +12,14 @@ function scrollFunction() {
   }
 }
 
+// Scroll to top when button is clicked
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
 
 
 
