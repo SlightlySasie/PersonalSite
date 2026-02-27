@@ -212,6 +212,7 @@ img.aboutme{
   text-align: center;
   color: black;
   pointer-events: none;
+  margin-top: 5%;
 }
 
 .stickercontainer{
@@ -777,4 +778,5 @@ footer{
     .footerbutton{
   font-size: 2.5vw;
   }
+
 }
