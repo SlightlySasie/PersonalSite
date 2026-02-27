@@ -203,6 +203,7 @@ footer {
 
     h1{
     font-size: 2em;
+    margin-top: 20%;
   }
 
   p{
@@ -217,6 +218,54 @@ footer {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+@media screen  and (max-width: 1400px) and (min-width: 768px)  { /* Specific to this particular image */
+  h2{
+    margin-top: 15%
+  }
+  .flagcontainer{
+    width: 40px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) { /* Specific to this particular image */
+  .flagcontainer{
+    width: 30px;
+    height: 45px;
+  }
+
+}
+
+@media screen and (max-width: 426px) and (min-width: 100px) { /* Specific to this particular image */
+  img.main {
+    width: 80%;
+    margin-top: -20%;
+  }
+
+  .flagcontainer{
+    width: 25px;
+    height: 40px;
+    margin-top: -18%;
+  }
+  
+  .titlebuttoncontainer {
+  right: 20%;
+  margin-top: -18%;
+  }
+
+  .titlebutton {
+  font-size: 5vw;
+  }
+
+  .footerbutton{
+  font-size: 2.5vw;
+  }
+
+  p{
+      text-align: left;
   }
 }
 
