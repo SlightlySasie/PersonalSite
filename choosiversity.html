@@ -6,7 +6,7 @@
     <title>Sacha Vermeer</title>
     <link rel="stylesheet" href="projectstyle.css">
     <script src="https://kit.fontawesome.com/dcfee6d073.js" crossorigin="anonymous"></script>
-    <script src="js.js"></script>
+
 
     <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/BigIcon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/MediumIcon.png">
@@ -35,20 +35,20 @@
         </div>
 
         <div>
-            <p class="uppertitle"><i> HCI Project <span class="tab"></span> Januari-March 2024</i></p>
-            <h1>Choosiversity</h1>
-            <p class="keytitle"><b><em>Key responsibilities:</b></em></p>
+            <p class="uppertitle"><i> HCI Project <span class="tab" data-lang-key="choosiversitytime"></span></i></p>
+            <h1 data-lang-key="choosiversitytitle"></h1>
+            <p class="keytitle" data-lang-key="keyresponsibilities"><b><em></b></em></p>
                 <div class="threegrid">
                     <div>
-                        <p class="keyparts"><b>UX Research</b></p>
+                        <p class="keyparts"><b data-lang-key="uxresearch"></b></p>
                         <ul>
-                            <li class="keyparts">Desk research</li>
-                            <li class="keyparts">User Interviews</li>
-                            <li class="keyparts">User</li>
+                            <li class="keyparts" data-lang-key="deskresearch"></li>
+                            <li class="keyparts" data-lang-key="userinterviews"></li>
+                            <li class="keyparts" data-lang-key="user"></li>
                         </ul>
                     </div>
                     <div>
-                        <p class="keyparts"><b>Visual & Information Design</b></p>
+                        <p class="keyparts"><b data-lang-key="visual_info"></b></p>
                         <ul>
                             <li class="keyparts">Rapid Prototyping</li>
                             <li class="keyparts">Interface Design</li>
@@ -64,47 +64,30 @@
     </div>
 
 <section>
-    <h2>Problem Space</h2>
-    <p class="centertext">
-        Our desk research shows that high school graduates often struggle to find an university and study that perfectly fits with them. 
-        This is especially true for students who consider studying abroad, as this greatly increases their range of possibilities. 
-        Addressing these challenges with a recommendation system that gathers the needs and wants of a 
-        student in a fun and engaging way can help young adults form better informed opinions on their next steps.
+    <h2 data-lang-key="problemspace_title"></h2>
+    <p class="centertext" data-lang-key="problemspace_text1">
     </p>
-    <h2>How do we solve this problem?</h2>
-    <p class="centertext">
-        To figure out what aspiring students are looking for, we conducted five interviews with our target audience and
-        we performed a literature review of available research about the needs of the target audience and what kind of 
-        solutions already exist.
+    <h2 data-lang-key="solveproblem_title"></h2>
+    <p class="centertext" data-lang-key="problemspace_text2">
     </p>
     <ul class="solvelist">
-        <li><b>Match the user's information needs</b>
-            <br> The three most important factors when choosing higher education
-            are the reputation or image of the school, the attitude of
-            the students towards school and the academic quality of the school[1].
+        <li><b data-lang-key="solvelist1"></b>
+            <br> <p data-lang-key="solvelist1text"></p>
         </li>
-        <li><b>Knowledge-based Recommender System</b>
-            <br> A constraint-based Recommender System (RS) is chosen over a case-based RS, 
-            as the latter offers a type of recommendation based on similarity among users, whereas the former, 
-            better preserve the uniqueness of the individual by analyzing each case as separate[2].
+        <li><b  data-lang-key="solvelist2"></b>
+            <br> <p data-lang-key="solvelist2text"></p> 
         </li>
-        <li><b>Gamification Elements</b>
-            <br>Keeps the user motivated and engaged to give the best recommendation possible, 
-            while helping the user in making this process less stressful[3].
+        <li><b data-lang-key="solvelist3"></b>
+            <br> <p data-lang-key="solvelist3text"></p>
         </li>
     </ul>
 
-    <h2>Visualize Concept</h2>
-    <p class="centertext">To develop the interface, a mood board was designed from scratch to make the overall appearance of 
-        the platform coherent with the goal of the project; to decrease the stress and to make the journeys of choosing the 
-        university more fun. Therefore, it has been decided to implement rounded fonts and shapes, bright colors, and quirky doodles 
-        in order to communicate and deliver this dimension of lightness and happiness. </p>
+    <h2 data-lang-key="visualizeconcept_title"></h2>
+    <p class="centertext" data-lang-key="visualizeconcept_text"></p>
     <img class="centerimg" src="Images/Choosiversity/ChoosiversityDesignSystem.png">
 
-    <h2>Final Design</h2>
-    <p class="centertext">The final design was created through iterative design. 
-        After a prototype was finished a cognitive walkthrough was performed with a member of the target audience.
-        This feedback would inform us about the strengths and weaknesses of the design, causing us to continuously refine and change the application for the better.
+    <h2 data-lang-key="finaldesign_title"></h2>
+    <p class="centertext" data-lang-key="finaldesign_text"></p>
     </p>
     <div class="center">
         <a class="button" href="https://www.figma.com/proto/F1ZvQ2Qx1ChI44aLKKR3cl/INFOMAIS_Choosiversity?page-id=0%3A1&node-id=77-891&starting-point-node-id=0%3A3&t=Br2z04MtFLfC4DJB-1">View Prototype</a>
@@ -132,9 +115,12 @@
         of recommendation. In International Conference on Human-Computer Interaction. Springer, 786–796</p>
 </section>
 
+    <script src="js.js"></script>
+
 <footer>
-    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top"><i class="fa-solid fa-chevron-up"></i> Back to top</button>
+    <button onclick="topFunction()" id="ftBtn" class="footerbutton" title="Go to top" data-lang-key="top"></button>
 </footer>
+
 
 </body>
 </html>

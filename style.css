@@ -171,13 +171,13 @@ i{
 a{
   text-decoration-line: none;
   color:black;
+  border: none;
 }
 
 p.contact1{
   font-size: 2vw;
   margin-left: 12%;
   margin-bottom: 5%;
-
 }
 
 a.contact1 {
