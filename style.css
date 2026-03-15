@@ -126,6 +126,10 @@ p{
   text-align: left;
 }
 
+.softerv{
+  margin-top: 0%;
+}
+
 h1{ 
     color: #0E0E14;
     position: absolute;
@@ -336,15 +340,15 @@ a.links{
 }
 
   img.logo1 {
-    width: 60px;
+    width: 4vw;
     height: auto;
-    padding-right: 70px;
+    padding-right: 4.5vw;
   }
 
   img.logo2 {
-    width: 60px;
+    width: 4vw;
     height: auto;
-    padding-left: 70px;
+    padding-left: 4.5vw;
   }
 
 p.skills{
@@ -496,7 +500,7 @@ footer{
   border-top: none; /* Hide top border */
 }
 
-@media screen  and (max-width: 1400px) and (min-width: 768px)  { /* Specific to this particular image */
+@media screen  and (max-width: 1400px) and (min-width: 768px)  { 
   .flagcontainer{
     width: 40px;
     height: 60px;
@@ -504,7 +508,11 @@ footer{
 
 }
 
-@media screen and (max-width: 768px) and (min-width: 425px) { /* Specific to this particular image */
+@media screen  and (max-width: 1100px) and (min-width: 768px)  { 
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 425px) { 
   .flagcontainer{
     width: 30px;
     height: 45px;
@@ -516,18 +524,6 @@ footer{
 
   .center-right {
     margin-top: -21%;
-  }
-
-  img.logo1 {
-    width: 35px;
-    height: auto;
-    padding-right: 50px;
-  }
-
-    img.logo2 {
-    width: 35px;
-    height: auto;
-    padding-left: 50px;
   }
 
   .center-right{
@@ -720,16 +716,17 @@ h3 {
   }
 
   img.logo1 {
-    width: 30px;
-    height: auto;
-    padding-right: 30px;
+    width: 9vw;
   }
 
   img.logo2 {
-    width: 30px;
-    height: auto;
-    padding-left: 30px;
+    width: 9vw;
   }
+
+  .softerv{
+    margin-bottom:1%;
+  }
+
   .projects{
     margin-top: 180%;
   }
@@ -785,11 +782,11 @@ h3 {
 
   @media screen and (max-width: 376px) and (min-width: 10px) { /* Specific to this particular image */
       img.logo1 {
-    padding-right: 25px;
+   padding-right: 6vw;
   }
 
   img.logo2 {
-    padding-left: 25px;
+    padding-left: 6vw;
   }
   }
 
