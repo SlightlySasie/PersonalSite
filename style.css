@@ -775,7 +775,7 @@ h3 {
 
   .skillcontainer{
     display: grid;
-    grid-template-columns: 40% 25%;
+    grid-template-columns: 40% 40%;
     margin-left: 18%;
     margin-right: 0%;
   }
