@@ -519,7 +519,7 @@ footer{
 }
 }
 
-@media screen and (max-width: 426px) and (min-width: 100px) { /* Specific to this particular image */
+@media screen and (max-width: 426px) and (min-width: 10px) { /* Specific to this particular image */
   img.main {
     width: 80%;
     margin-top: 6%;
@@ -766,6 +766,24 @@ h3 {
     margin-right: 0%;
   }
 
+  @media screen and (max-width: 376px) and (min-width: 10px) { /* Specific to this particular image */
+      img.logo1 {
+    padding-right: 25px;
+  }
 
+  img.logo2 {
+    padding-left: 25px;
+  }
+  }
+
+    @media screen and (max-width: 321px) and (min-width: 10px) { /* Specific to this particular image */
+      img.logo1 {
+    padding-right: 18px;
+  }
+
+  img.logo2 {
+    padding-left: 18px;
+  }
+  }
 
 }
