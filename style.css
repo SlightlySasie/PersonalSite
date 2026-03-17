@@ -187,10 +187,12 @@ p.contact1{
 
 p.contact11 {
   transform: rotate(4deg);
+  margin: 0% 0% 0% 20%;
 }
 
 p.contact12 {
   transform: rotate(4deg);
+  margin: -5% 0% 0% 5%;
 }
 
 a.contact1 {
