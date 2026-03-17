@@ -182,6 +182,15 @@ p.contact1{
   font-size: 2vw;
   margin-left: 12%;
   margin-bottom: 5%;
+  transform: rotate(4deg);
+}
+
+p.contact11 {
+  transform: rotate(4deg);
+}
+
+p.contact12 {
+  transform: rotate(4deg);
 }
 
 a.contact1 {
@@ -570,9 +579,11 @@ footer{
   }
 
   img.aboutme {
-    width: 90%;
-    margin-top: -22%;
-    margin-bottom: -10%;
+    width: 125%;
+    margin-top: -30%;
+    margin-bottom: -25%;
+    margin-left: -47%;
+    margin-right: -45%;
   }
 
 
@@ -580,21 +591,34 @@ footer{
   .contact{
     margin-left: 25%;
     width: 40%;
-    margin-top: -32%;
+    margin-top: -33%;
   }
 
   p.contact1 {
-    font-size: 4vw;
+    font-size: 5vw;
+    margin-left: -4%;
+    transform: rotate(4deg);
   }
 
+  p.contact11 {
+    transform: rotate(4deg);
+    margin: 0% 0% 0% 15%;
+  }
+
+  p.contact12 {
+    transform: rotate(4deg);
+    margin: 0% 0% 0% 15%;
+  }
+
+
   a.contact1 {
-    font-size: 2.5vw; 
-    margin-left: -30%;
+    font-size: 3.5vw; 
+    margin-left: -40%;
   }
 
   a.contact2 {
-    font-size: 2.5vw;   
-    margin-left: -24%;
+    font-size: 3.5vw;   
+    margin-left: -45%;
   }
 
   .resumecontainer{
@@ -736,32 +760,32 @@ h3 {
   }
 
   h5 {
-    font-size: 6vw;
+    font-size: 7vw;
     margin-bottom: 3%;
     margin-top: 3%;
     margin-right: 0%;
   }
 
   p.projecttext {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 0% 0% 0% 5%;
   }
 
   .projectcontainer {
     display: block;
     text-align: center;
-    padding-right: 12%
+    padding-right: 8%;
+    padding-left: 8%;
   }
 
   img.project {
-    width: 75%;
     align-items: center;
   }
 
   .cornerborderbutton {
     padding: 1.5rem;
-    font-size: 3vw;
-    margin-left: 30%;
+    font-size: 5vw;
+    margin-left: 25%;
     /* font-weight: 300; */
   }
 
@@ -769,8 +793,8 @@ h3 {
     margin-top: 10%;
   }
 
-    .footerbutton{
-  font-size: 2.5vw;
+  .footerbutton{
+    font-size: 3.5vw;
   }
 
   .skillcontainer{
